@@ -1,0 +1,11 @@
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\bin\Debug\Agenda2.exe.config
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\bin\Debug\Agenda2.exe
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\bin\Debug\Agenda2.pdb
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.csproj.AssemblyReference.cache
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.csproj.SuggestedBindingRedirects.cache
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.Form1.resources
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.Properties.Resources.resources
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.csproj.GenerateResource.cache
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.csproj.CoreCompileInputs.cache
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.exe
+D:\programacion\ejecutable\Programacion C#\repositorio trabajo\AgendaNueva\Agenda2\obj\Debug\Agenda2.pdb
