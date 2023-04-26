@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelAgenda = new System.Windows.Forms.Panel();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnReporte = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -46,14 +47,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.lblFechaNAcimiento = new System.Windows.Forms.Label();
             this.lblNumeroTelefonico = new System.Windows.Forms.Label();
             this.lblApellidoMaterno = new System.Windows.Forms.Label();
             this.lblApellidoPaterno = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,16 @@
             this.panelAgenda.TabIndex = 0;
             this.panelAgenda.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.CalendarForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.dtpFechaNacimiento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(417, 238);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(333, 28);
+            this.dtpFechaNacimiento.TabIndex = 21;
+            // 
             // btnReporte
             // 
             this.btnReporte.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -117,6 +127,7 @@
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGuardar
             // 
@@ -257,16 +268,6 @@
             this.lblEmail.TabIndex = 8;
             this.lblEmail.Text = "Correo Electronico :";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Agenda2.Properties.Resources._956_9563878_agenda_graphic_design;
-            this.pictureBox1.Location = new System.Drawing.Point(253, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblDireccion
             // 
             this.lblDireccion.AutoSize = true;
@@ -328,15 +329,15 @@
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre :";
             // 
-            // dtpFechaNacimiento
+            // pictureBox1
             // 
-            this.dtpFechaNacimiento.CalendarForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.dtpFechaNacimiento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(417, 238);
-            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(333, 28);
-            this.dtpFechaNacimiento.TabIndex = 21;
+            this.pictureBox1.Image = global::Agenda2.Properties.Resources._956_9563878_agenda_graphic_design;
+            this.pictureBox1.Location = new System.Drawing.Point(253, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(259, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 

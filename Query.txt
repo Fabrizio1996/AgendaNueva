@@ -1,0 +1,14 @@
+CREATE DATABASE agenda
+
+CREATE TABLE contactos (
+	id SERIAL PRIMARY KEY,
+	nombres VARCHAR(50) NOT NULL,
+	apellidoPaterno VARCHAR(50),
+	apellidoMaterno VARCHAR(50),
+	direccion VARCHAR(50),
+	telefono VARCHAR(20),
+	fechaNacimiento VARCHAR(50),
+	correo VARCHAR(50))
+	
+	insert into contactos(nombres, apellidoPaterno, apellidoMaterno) values('Pedro', 'Lopez', 'Quispe')
+	insert into contactos(nombres, apellidoPaterno, apellidoMaterno) values('Mario', 'AAAAA', 'BBBBBB')

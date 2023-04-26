@@ -21,5 +21,35 @@ namespace Agenda2
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ConexionBD conexion = new ConexionBD();
+
+            string nombre = txtNombre.Text;
+
+            dtContactos.DataSource = conexion.BuscarContacto(nombre);
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dtContactos.SelectedCells.Count > 0)
+            {
+                int filaSeleccionadaIndex = dtContactos.SelectedCells[0].RowIndex;
+                DataGridViewRow filaSeleccionada = dtContactos.Rows[filaSeleccionadaIndex];
+                string celdaValor = Convert.ToString(filaSeleccionada.Cells["id"].Value);
+
+                ConexionBD conexion = new ConexionBD();
+                if (conexion.EliminarContacto(celdaValor))
+                {
+                    MessageBox.Show("SE ELIMINO EL CONTACTO");
+                }
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
