@@ -124,4 +124,64 @@ class Agenda
         Console.WriteLine($"Cantidad de contactos registrados: {contactos.Count}");
     }
 }
+class Program
+{
+    static void Main(string[] args)
+    {
+        Agenda agenda = new Agenda();
 
+        {
+            int opcion = 0;
+            
+            do
+            {
+                Console.WriteLine();
+                Console.WriteLine("Agenda");
+                Console.WriteLine("------");
+                Console.WriteLine("1. Agregar contacto");
+                Console.WriteLine("2. Listar contactos");
+                Console.WriteLine("3. Listar contactos por genero");
+                Console.WriteLine("4. Reporte cantidad de contactos registrados");
+                Console.WriteLine("5. Salir");
+                Console.Write("Ingresar una opcion: ");
+
+                if (int.TryParse(Console.ReadLine(), out opcion))
+                
+                {
+                    switch (opcion)
+                    {
+                        case 1:
+                             agenda.AgregarContacto();
+                             break;
+                        case 2:
+                             agenda.ListarContactos();
+                             break;
+                        case 3:
+                             agenda.ListarContactosPorGenero();
+                             break;
+                        case 4:
+                             agenda.ReporteCantidadContactos();
+                             break;
+                        case 5:
+                             Console.WriteLine("Se cierra la agenda. Hasta Pronto!");
+                             return;
+                        default:
+                             Console.WriteLine("Opcion invalida. Intentarlo nuevamente");
+                             break;
+                    }
+                }
+                
+                else
+                
+                {
+                    Console.WriteLine("Opción inválida");
+                }
+                
+                Console.WriteLine("Presione una tecla para continuar...");
+                Console.ReadKey();
+            }
+            
+            while (opcion != 5);
+        }
+    }
+}
