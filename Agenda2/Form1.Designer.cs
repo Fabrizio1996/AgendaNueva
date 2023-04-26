@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelAgenda = new System.Windows.Forms.Panel();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.btnReporte = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -53,7 +54,6 @@
             this.lblApellidoMaterno = new System.Windows.Forms.Label();
             this.lblApellidoPaterno = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.panelAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,16 @@
             this.panelAgenda.TabIndex = 0;
             this.panelAgenda.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // dtpFechaNacimiento
+            // 
+            this.dtpFechaNacimiento.CalendarForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.dtpFechaNacimiento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(417, 238);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(333, 28);
+            this.dtpFechaNacimiento.TabIndex = 21;
+            // 
             // btnReporte
             // 
             this.btnReporte.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -117,6 +127,7 @@
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // btnGuardar
             // 
@@ -327,16 +338,6 @@
             this.lblNombre.Size = new System.Drawing.Size(96, 25);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre :";
-            // 
-            // dtpFechaNacimiento
-            // 
-            this.dtpFechaNacimiento.CalendarForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.dtpFechaNacimiento.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpFechaNacimiento.Location = new System.Drawing.Point(417, 238);
-            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
-            this.dtpFechaNacimiento.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dtpFechaNacimiento.Size = new System.Drawing.Size(333, 28);
-            this.dtpFechaNacimiento.TabIndex = 21;
             // 
             // Form1
             // 
